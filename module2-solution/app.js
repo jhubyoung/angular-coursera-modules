@@ -21,9 +21,11 @@
     service.showFullBoughtMsg="";
     service.showFullNothingBoughtMsg="no items bought yet";
     var toBuyItems = [
-      {itemName:'baguettes', itemQuantity:'20'},
-      {itemName:'cheese blocks', itemQuantity:'30'},
-      {itemName:'tomatoes', itemQuantity:'50'}
+      {itemName:'baguettes', itemQuantity:'2'},
+      {itemName:'cheese blocks', itemQuantity:'3'},
+      {itemName:'grapes', itemQuantity:'55'},
+      {itemName:'chicharrones', itemQuantity:'8'},
+      {itemName:'tomatoes', itemQuantity:'5'}
     ];
     var boughtItems = [];
     service.getBuyItems = function(){
