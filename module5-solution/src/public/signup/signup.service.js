@@ -29,12 +29,15 @@ function SignupService($http){
   service.getDish = function(dishShortName){
     var menuUrl = "http://jhubyoung-course5.herokuapp.com/menu_items";
     menuUrl = menuUrl + "/"+dishShortName+".json";
+    console.log("service, getDish, URL: ", menuUrl);
     var promise = $http({
       url: menuUrl
     });
     promise.then(function(result){
+      console.log("service getDish, success: ", result);
       return result.data;
     }, function(errorResponse){
+      console.log("service getDish, error: ", errorResponse);
       return errorResponse;
     });
     return promise;
