@@ -27,7 +27,7 @@ function SignupService($http){
   }
 
   service.getDish = function(dishShortName){
-    var menuUrl = "http://jhubyoung-course5.herokuapp.com/menu_items";
+    var menuUrl = "https://jhubyoung-course5.herokuapp.com/menu_items";
     menuUrl = menuUrl + "/"+dishShortName+".json";
     console.log("service, getDish, URL: ", menuUrl);
     var promise = $http({
