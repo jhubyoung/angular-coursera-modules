@@ -10,7 +10,7 @@
       <div class="text-center">{{ myinfoCtrl.user.favdish }}</div>
       <div class="text-center">{{ myinfoCtrl.dish.name }}</div>
       <div class="text-center">{{ myinfoCtrl.dish.description }}</div>
-      <div class="text-center" ng-if="myinfoCtrl.user">
+      <div class="text-center" ng-if="!!myinfoCtrl.user">
         <img width="250" height="150"
         ng-src="http://jhubyoung-course5.herokuapp.com/images/{{myinfoCtrl.user.favdish}}.jpg"
         alt="{{myinfoCtrl.user.favdish}}">
