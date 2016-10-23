@@ -1,0 +1,24 @@
+<div class="container">
+  <h2 class="text-center">
+    User Info
+  </h2>
+  <h3>
+      <div class="text-center">{{ myinfoCtrl.user.firstname }}</div>
+      <div class="text-center">{{ myinfoCtrl.user.lastname }}</div>
+      <div class="text-center">{{ myinfoCtrl.user.email }}</div>
+      <div class="text-center">{{ myinfoCtrl.user.phone }}</div>
+      <div class="text-center">{{ myinfoCtrl.user.favdish }}</div>
+      <div class="text-center">{{ myinfoCtrl.dish.name }}</div>
+      <div class="text-center">{{ myinfoCtrl.dish.description }}</div>
+      <div class="text-center">
+        <img width="250" height="150"
+        ng-src="http://jhubyoung-course5.herokuapp.com/images/{{myinfoCtrl.user.favdish}}.jpg"
+        alt="{{myinfoCtrl.user.favdish}}">
+      </div>
+  </h3>
+  <div class="text-center" ng-if="!myinfoCtrl.user">
+    Not Signed Up Yet<br>
+    <a ui-sref="public.signup">Sign Up Now!</a>
+  </div>
+
+</div>
