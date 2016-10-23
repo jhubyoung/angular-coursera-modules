@@ -28,7 +28,6 @@ function SignupController(SignupService) {
       SignupService.setUserValues($ctrl.user);
     })
     .catch(function(response){
-      console.log("controller error resp: ", response);
       $ctrl.user.userMsg = "No such menu number exists";
       $ctrl.user.favdish = "";
     });
